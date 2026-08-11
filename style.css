@@ -1,0 +1,45 @@
+/* Animation et positionnement des halos lumineux */
+.glow-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    mix-blend-mode: screen;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 1; /* Reste sous le contenu */
+}
+
+/* Positionnement précis de chaque halo */
+.blob-1 {
+    top: 50px;
+    left: 20%;
+    width: 500px;
+    height: 500px;
+    background-color: #8b5cf6; /* Violet */
+}
+
+.blob-2 {
+    top: 800px;
+    right: 15%;
+    width: 600px;
+    height: 600px;
+    background-color: #4f46e5; /* Indigo */
+}
+
+.blob-3 {
+    top: 1800px;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    background-color: #0891b2; /* Cyan */
+}
+/* Force le canvas des particules à occuper tout l'arrière-plan de l'écran */
+#tsparticles {
+    position: fixed !important; /* Reste fixe même quand on défile */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Reste bien en dessous du texte et des boutons */
+    pointer-events: none;
+} 
