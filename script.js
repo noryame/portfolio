@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
                 events: {
                     onHover: {
                         enable: true,
-                        mode: "repulse" /* La souris repousse les fibres */
+                        mode: "repulse"  
                     },
                     resize: true
                 },
